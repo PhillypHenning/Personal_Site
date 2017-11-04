@@ -98,7 +98,7 @@
 
 .titleplate-font{
     font-size: 1em;
-    font-size: 4vw;
+    font-size: 5.5vw;
     text-shadow: 8% 8% 8% rgba(0,0,0,0.5) ;
     color : #42a1f4;
 }
@@ -121,6 +121,7 @@
 }
 
 .madewith-font{
+    margin-top:5%;
     font-size: 5px;
     font-size: 1.8vw;
     text-align: center;
@@ -130,11 +131,11 @@
 .footer {
     font-size: 1px;
     font-size: .5vw;
-    color: #CAC7C7;
+    color: rgb(168, 167, 167);
 }
 
 .button-c {
-    background-color:#768d87 0;
+    background-color:rgba(248, 244, 244, 0.2);
     filter: alpha(opacity(0)); /* ~IE8 */
 	-moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
@@ -146,7 +147,7 @@
 	font-size: 1.7vw; /* Change to vw */
 	padding:11px 23px;
 	text-decoration:none;
-    text-shadow: .5 px .5px 0px rgba(255, 255, 255, 0.5);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
     text-align: center;
     width: 15%;
     height: 40px;
@@ -196,45 +197,46 @@
 /* Horizontal screen resizing control */
 
 @media screen and (max-width:640px){
-    .title-font {
-        color : rgb(24, 55, 192);
+    .button-c{
+        width: 40px;
+        height: 30px;
+    }
+    .a-img{
+        margin-top:10px;
     }
 }
 
 @media screen and (min-width:640px){
-    .title-font {
-        color : rgb(24, 192, 33);
-    } 
+    .button-c{
+        width: 70px;
+        height: 35px;
+    }
 }
 
 @media screen and (min-width: 800px){
-    .title-font {
-        color : rgb(24, 192, 156);
-    }  
+    .button-c{
+        width: 75px;
+        height: 35px;
+    }
 }
 
 @media screen and (min-width:1024px){
- .title-font {
-        color : rgb(24, 41, 192);
-    } 
+    .button-c{
+        width: 100px;
+        height: 40px;
+    }
 }
 
 @media screen and (min-width:1152px){
-    .title-font {
-        color : rgb(178, 24, 192);
-    } 
+
 }
 
 @media screen and (min-width:1280px){
-    .title-font {
-        color : rgb(192, 24, 80);
-    } 
+
 }
 
 @media screen and (min-width:1600px){
-    .title-font {
-        color : rgb(192, 24, 32);
-    } 
+
 }
 
 
