@@ -11,7 +11,6 @@ Make sure you have these installed locally
 ```
 Python 2.7.12
 Django 1.11.7
-
 ```
 ### Installing
 
