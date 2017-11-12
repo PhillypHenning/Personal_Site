@@ -1,3 +1,4 @@
+/* Grid design */
 .grid-container {
     display: grid;
     position: fixed;
@@ -66,6 +67,7 @@
 }
 
 
+/* Icons and Images */
 .ic {
     width:100%;
 }
@@ -86,6 +88,15 @@
     display: inline-block;
 }
 
+.pic-portrait{
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../pictures/test-pic.png ) no-repeat center center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* fonts */
 @font-face {
     font-family : AUdimat;
     src : url(../fonts/AUdimat-BoldItalic.otf);
@@ -128,13 +139,12 @@
     color : rgba(250, 250, 250, 0.85);    
 }
 
-.footer {
-    font-size: 1px;
-    font-size: .5vw;
-    color: rgb(168, 167, 167);
-}
 
+/* buttons */
 .button-c {
+    display:flex;
+    align-items:center;
+    justify-content: center;
     background-color:rgba(248, 244, 244, 0.2);
     filter: alpha(opacity(0)); /* ~IE8 */
 	-moz-border-radius: 7px;
@@ -157,25 +167,26 @@
     color: #95CAFA;
 }
 
-.about{
+.button-about{
     margin-left: 27%;
     display: block;
     float: left;
 }
 
-.resume{
+.button-resume{
     display: block;
     float: left;
     margin-left:15%;
 }
 
-.pic-portrait{
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../pictures/test-pic.png ) no-repeat center center;
-    border-radius: 50%;
-    width: 100%;
-    height: 100%;
+.button-back{
+    display:block;
+    margin:0;
+    float:left;
 }
 
+
+/* text */
 .textarea-about{
     background-color: rgba(248, 244, 244, 0.7);
     background-repeat: no-repeat;
@@ -193,12 +204,18 @@
 }
 
 
+/* footer */
+.footer {
+    font-size: 1px;
+    font-size: .5vw;
+    color: rgb(168, 167, 167);
+}
+
 
 /* Horizontal screen resizing control */
-
 @media screen and (max-width:640px){
     .button-c{
-        width: 40px;
+        width: 55px;
         height: 30px;
     }
     .a-img{
@@ -241,7 +258,6 @@
 
 
 /* Vertical screen resizing control */
-
 @media screen and (max-height:320px){
     .grid-container-index{
         /*Column / row */
