@@ -89,7 +89,7 @@
 }
 
 .pic-portrait{
-    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../pictures/test-pic.png ) no-repeat center center;
+    background: linear-gradient( rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) ), url(../pictures/test-pic.png) no-repeat center center;
     border-radius: 50%;
     width: 100%;
     height: 100%;
@@ -145,22 +145,35 @@
     display:flex;
     align-items:center;
     justify-content: center;
+    vertical-align: middle;
+    
     background-color:rgba(248, 244, 244, 0.2);
     filter: alpha(opacity(0)); /* ~IE8 */
-	-moz-border-radius: 7px;
+    
+    -moz-border-radius: 7px;
 	-webkit-border-radius: 7px;
 	border-radius: 7px;
 	border: 3px solid #E1E7E5;
-	cursor: pointer;
+    
+    cursor: pointer;
+    
     color: #FFC637;
+    
     font-size: 5px;
 	font-size: 1.7vw; /* Change to vw */
-	padding:11px 23px;
-	text-decoration:none;
+    
+    text-decoration:none;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5) ;
     text-align: center;
-    width: 15%;
-    height: 40px;
+    
+    width: 5em;
+    height: 2.5em;
+    
+    -webkit-transition: all 350ms ease-in-out;
+    -moz-transition: all 350ms ease-in-out;
+    -ms-transition: all 350ms ease-in-out;
+    -o-transition: all 350ms ease-in-out;
+    transition: all 350ms ease-in-out;
 }
 
 .button-c:hover {
@@ -169,20 +182,18 @@
 
 .button-about{
     margin-left: 27%;
-    display: block;
     float: left;
 }
 
 .button-resume{
-    display: block;
     float: left;
     margin-left:15%;
 }
 
 .button-back{
-    display:block;
     margin:0;
     float:left;
+    height: 2em;
 }
 
 
@@ -212,91 +223,14 @@
 }
 
 
-/* Horizontal screen resizing control */
-@media screen and (max-width:640px){
-    .button-c{
-        width: 55px;
-        height: 30px;
-    }
-    .a-img{
-        margin-top:10px;
-    }
-}
-
-@media screen and (min-width:640px){
-    .button-c{
-        width: 70px;
-        height: 35px;
-    }
-}
-
-@media screen and (min-width: 800px){
-    .button-c{
-        width: 75px;
-        height: 35px;
-    }
-}
-
-@media screen and (min-width:1024px){
-    .button-c{
-        width: 100px;
-        height: 40px;
-    }
-}
-
-@media screen and (min-width:1152px){
-
-}
-
-@media screen and (min-width:1280px){
-
-}
-
-@media screen and (min-width:1600px){
-
-}
+@media screen and (min-height:480) and (min-width: )
 
 
-/* Vertical screen resizing control */
-@media screen and (max-height:320px){
-    .grid-container-index{
-        /*Column / row */
-        grid :  30% 70%;
-    } 
-
-    .grid-madewith{
-        grid-row: 2 / span 1;
-        margin-top: 20;
-    }
-
-    .grid-connect{
-        grid-row: 2 / span 1;
-        margin-top: 20;
-    }
-
-    .grid-title{
-        margin-top: -2%;
-    }
-
-    .title-font{
-        font-size: 100%;
-        font-size: 7.5vw;
-    }
-
-    .button-c{
-        font-size: 1.5vw;
-        padding: 5 0;
-    }
-
-    .footer {
-        font-size: 1px;
-        font-size: .5vw;
-    }
-}
+/*  Old for reuse --
 
 @media screen and (min-height:320px){  
     .grid-container-index{
-        /*Column / row */
+        /*Column / row *//*
         grid : 15% 60% 30%;
     } 
 
@@ -318,7 +252,7 @@
 
     .title-font{
         font-size: 100%;
-        font-size: 7.5vw;
+        font-size: 8vw;
     }
 
     .button-c{
@@ -351,4 +285,4 @@
 
 @media screen and (min-height: 1281px){
  
-}
+}*/
