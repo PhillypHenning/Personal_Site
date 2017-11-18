@@ -7,31 +7,50 @@
         </div>
         <div class="grid-item grid-title">
             <p id='AUd' class='title-font'>Web Developer</p>
-            <p id="AUd" class='subtitle-font'>Elegant solutions; simple design</p>
+            <div class="button-layout">
+                <a href="{% url 'home:about' %}" class="button-c button-about" id="AUd">About</a>
+                <a href="{% static 'assets/Phillyp-Henning-Resume.docx' %}" class="button-c button-resume" id="AUd" download>Resume</a>
+            </div>
         </div>
-        <div class="grid-item grid-contact">
-            <p class="connect-title" id="AUd">Connect with me</p>
-            <a href="https://github.com/PhillypHenning">
-                <img class='ic' src="{% static 'pictures/github-logo.png' %}" alt="github"> 
+        <div class="grid-item grid-connect">
+            <p class="connect-font" id="AUd">Connect with me</p>         
+            <a class='a-img'href="https://github.com/PhillypHenning">
+            <source  srcset="{% static 'pictures/github-logo.png' %}">
+            <img class='ic' src="{% static 'pictures/github-logo.png' %}" alt="github">
             </a>
-            <a href="https://www.linkedin.com/in/phil-henning-832b38127/">
+            <a class='a-img' href="https://www.linkedin.com/in/phil-henning-832b38127/">
             <source  srcset="{% static 'pictures/linkedin.png' %}">
-            <source  srcset="{% static 'pictures/linkedin.png' %}">
-            <img class='ic' src="{% static 'pictures/linkedin.png' %}" alt="linkedin"> 
+            <img class='ic' src="{% static 'pictures/linkedin.png' %}" alt="linkedin">
             </a>
-            
+            <br/>
+            <a class='a-img' href="https://wordpress.com/view/bluesockphil.wordpress.com">
+            <source  srcset="{% static 'pictures/wordpress.png' %}">
+            <img class='ic' src="{% static 'pictures/wordpress.png' %}" alt="wordpress">
+            </a>
+            <a class='a-img' href="mailto:phil8t8@gmail.com">
+            <source  srcset="{% static 'pictures/mail.png' %}">
+            <img class='ic' src="{% static 'pictures/mail.png' %}" alt="email">
+            </a>
+        </div>
+        <div class="grid-item grid-madewith">
+            <p class="madewith-font" id="AUd">Powered by</p>
+
+            <picture>
+            <source  srcset="{% static 'pictures/python.png' %}"/>
+            <img class='ic ic-lrg' src="{% static 'pictures/python.png' %}" alt="python"/> 
+            </picture>
+
+            <picture>
+            <source srcset="{% static 'pictures/HTML5.png' %}"/>
+            <img class='ic ic-lrg' src="{% static 'pictures/HTML5.png' %}" alt="HTML5"/> 
+            </picture>
+
             <br/><br/>
-            
-            <a href="https://wordpress.com/view/bluesockphil.wordpress.com">
-            <source  srcset="{% static 'pictures/wordpress.png' %}">
-            <source  srcset="{% static 'pictures/wordpress.png' %}">
-            <img class='ic' src="{% static 'pictures/wordpress.png' %}" alt="wordpress"> 
-            </a>
-            <a href="mailto:phil8t8@gmail.com">
-            <source  srcset="{% static 'pictures/mail.png' %}">
-            <source  srcset="{% static 'pictures/mail.png' %}">
-            <img class='ic' src="{% static 'pictures/mail.png' %}" alt="email"> 
-            </a>
+
+            <picture>
+            <source srcset="{% static 'pictures/css3.png' %}" />
+            <img class='ic ic-lrg' src="{% static 'pictures/css3.png' %}" alt="css3"/> 
+            </piture>
         </div>
     </div>
 
