@@ -85,6 +85,7 @@
     white-space: nowrap;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 25px;
     display: inline-block;
 }
 
@@ -132,11 +133,12 @@
 }
 
 .madewith-font{
-    margin-top:5%;
+    margin-top:.5%;
     font-size: 5px;
     font-size: 1.8vw;
     text-align: center;
-    color : rgba(250, 250, 250, 0.85);    
+    color : rgba(250, 250, 250, 0.85);  
+      
 }
 
 
@@ -222,67 +224,17 @@
     color: rgb(168, 167, 167);
 }
 
-
-@media screen and (min-height:480) and (min-width: )
-
-
-/*  Old for reuse --
-
-@media screen and (min-height:320px){  
-    .grid-container-index{
-        /*Column / row *//*
-        grid : 15% 60% 30%;
-    } 
-
-    .grid-madewith{
-        grid-row: 3 / span 1;
-        margin-top: -50;
-    }
-
-    .grid-connect{
-        grid-row: 3 / span 1;
-        margin-top: -50;
-    }
-
-    .grid-title{
-        margin-top: 55;
-        grid-row: 2 / span 2;
-        margin-top: -2%;
-    }
-
-    .title-font{
-        font-size: 100%;
-        font-size: 8vw;
-    }
-
-    .button-c{
-        font-size: 1.5vw;
-        padding: 5 0;
-    }
-
-    .footer {
-        font-size: 1px;
-        font-size: .5vw;
-    }
-}
-
-@media screen and (min-height: 481px){
- 
-}
-
-@media screen and (min-height: 641px){
- 
-}
-
-@media screen and (min-height: 961px){
- 
-}
-
-
-@media screen and (min-height: 1079px){
+/* Screen based tuning */
+/* Desktop window resizing */
+@media screen and (max-height: 30em) and (max-width: 44em){
     
+    /* index */
+    .grid-item{
+        border: 1px solid white;
+    }
+    
+    .a-img{     
+        margin-left: 5px;
+        margin-right: 5px;      
+    }
 }
-
-@media screen and (min-height: 1281px){
- 
-}*/
