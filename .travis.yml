@@ -1,0 +1,7 @@
+languge: python
+pyhthon:
+  - "3.5"
+install:
+  - pip install django
+script:
+  - python -m unittest
