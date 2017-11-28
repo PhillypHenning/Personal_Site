@@ -1,5 +1,5 @@
 languge: python
-pyhthon:
+python:
   - "3.6"
 install:
   - pip install django
